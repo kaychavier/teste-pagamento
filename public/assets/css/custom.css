@@ -1,0 +1,21 @@
+.invalid-feedback {
+  display: inline;
+}
+
+.card-body {
+  padding-top: 0px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.no-button {
+  outline: none;
+  padding: 5px;
+  border: 0px;
+  box-sizing: none;
+  background-color: transparent;
+}
