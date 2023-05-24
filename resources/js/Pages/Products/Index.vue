@@ -1,5 +1,5 @@
 <script setup>
-import BaseLayout from "../../layouts/BaseLayout.vue";
+import BaseLayout from "../../Layouts/BaseLayout.vue";
 import { Link, usePage, router } from "@inertiajs/vue3";
 import Pagination from "../../Components/Global/Pagination.vue";
 import Alert from "../../Components/Global/Alert.vue";
@@ -7,8 +7,8 @@ import { swalConfirm } from "../../Assets/js/constants";
 
 const { permissions } = usePage().props.auth.user;
 const { products } = defineProps({
-  products: Object
-})
+  products: Object,
+});
 const deleteProduct = (id) => {
   swalConfirm(
     ({ isConfirmed }) =>
@@ -46,7 +46,7 @@ const deleteProduct = (id) => {
           </thead>
           <tbody>
             <tr v-if="products?.total > 0" v-for="product in products?.data">
-              <td><img :src="product.image_path" width="50" height="50"></td>
+              <td><img :src="product.image_path" width="50" height="50" /></td>
               <td>{{ product.name }}</td>
               <td>{{ product.formated_price }}</td>
               <td>{{ product.created_at }}</td>
@@ -71,7 +71,7 @@ const deleteProduct = (id) => {
                     </Link>
                     <div
                       class="dropdown-item"
-                      v-if="permissions.includes('delete product')" 
+                      v-if="permissions.includes('delete product')"
                       @click="deleteProduct(product.id)"
                     >
                       <i class="fa fa-trash-alt text-danger me-1"></i>

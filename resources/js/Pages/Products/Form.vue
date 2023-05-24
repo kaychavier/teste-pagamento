@@ -1,5 +1,5 @@
 <script setup>
-import BaseLayout from "../../layouts/BaseLayout.vue";
+import BaseLayout from "../../Layouts/BaseLayout.vue";
 import { defineProps, ref } from "vue";
 import { useForm, Link } from "@inertiajs/vue3";
 

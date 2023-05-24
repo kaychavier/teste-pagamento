@@ -1,6 +1,6 @@
 <script setup>
 import Pagination from "../../Components/Global/Pagination.vue";
-import BaseLayout from "../../layouts/BaseLayout.vue";
+import BaseLayout from "../../Layouts/BaseLayout.vue";
 import { Link, usePage, router } from "@inertiajs/vue3";
 import Alert from "../../Components/Global/Alert.vue";
 import { swalConfirm } from "../../Assets/js/constants";

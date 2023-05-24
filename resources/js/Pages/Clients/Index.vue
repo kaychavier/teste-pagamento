@@ -1,5 +1,5 @@
 <script setup>
-import BaseLayout from "../../layouts/BaseLayout.vue";
+import BaseLayout from "../../Layouts/BaseLayout.vue";
 import { Link, usePage, router } from "@inertiajs/vue3";
 import Pagination from "../../Components/Global/Pagination.vue";
 import Alert from "../../Components/Global/Alert.vue";
@@ -7,8 +7,8 @@ import { swalConfirm } from "../../Assets/js/constants";
 
 const { permissions } = usePage().props.auth.user;
 const { clients } = defineProps({
-  clients: Object
-})
+  clients: Object,
+});
 const deleteClient = (id) => {
   swalConfirm(
     ({ isConfirmed }) =>
@@ -67,7 +67,7 @@ const deleteClient = (id) => {
                     </Link>
                     <div
                       class="dropdown-item"
-                      v-if="permissions.includes('delete client')" 
+                      v-if="permissions.includes('delete client')"
                       @click="deleteClient(client.id)"
                     >
                       <i class="fa fa-trash-alt text-danger me-1"></i>

@@ -1,6 +1,6 @@
 <script setup>
 import { useForm, Link } from "@inertiajs/vue3";
-import BaseLayout from "../../layouts/BaseLayout.vue";
+import BaseLayout from "../../Layouts/BaseLayout.vue";
 
 const { role, permissions } = defineProps({
   permissions: Array,

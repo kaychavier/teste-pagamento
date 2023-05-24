@@ -1,5 +1,5 @@
 <script setup>
-import BaseLayout from "../../layouts/BaseLayout.vue";
+import BaseLayout from "../../Layouts/BaseLayout.vue";
 import { Link, usePage, router } from "@inertiajs/vue3";
 import Pagination from "../../Components/Global/Pagination.vue";
 import Alert from "../../Components/Global/Alert.vue";
